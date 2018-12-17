@@ -21,14 +21,11 @@ public class Erzeuger implements Runnable
         {
             String name = Thread.currentThread().getName();
             System.out.println(name + " stellt ein Element her.");
-            for (int j = 3; j > 0; j--)
-            {
-                try{
-                    Thread.sleep(1000);
-                }catch(Exception ex)
-                {};
-            }
-            System.out.println(name + " fügt das Element in den Puffer ein.");
+            try {
+                Thread.sleep(1000);
+            }catch(Exception ex)
+            {};
+
             puffer.einfuegen(new Element());
             try{
                 Thread.sleep(1000);

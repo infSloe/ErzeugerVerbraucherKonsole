@@ -20,7 +20,8 @@ public class Puffer
         if (liste.size()<max)
         {
             liste.add(elem);
-            System.out.println("     Puffer: " + liste.size());
+            System.out.println(Thread.currentThread().getName() +
+                    " hat ein Element eingefügt. Puffer: " + liste.size());
         }
         else
         {
@@ -35,7 +36,8 @@ public class Puffer
         if (anzahl>0)
         {
             Element elem = liste.remove(anzahl-1);
-            System.out.println("     Puffer: " + liste.size());
+            System.out.println("          " + Thread.currentThread().getName() +
+                    " hat ein Element entnommen. Puffer: " + liste.size());
             return elem;
 
         }
