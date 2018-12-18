@@ -5,3 +5,4 @@
 ## Themen
 * Erzeuger-Verbraucher-Problem
 * Monitore
+* Ausgabe nur auf der Konsole
